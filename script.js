@@ -892,6 +892,23 @@ const surveyJson = {
               "confirmDelete": true,
               "addRowText": "Agregar una fila",
               "removeRowText": "Eliminar una fila"
+            },
+            {
+              "type": "text",
+              "name": "ultima_fecha_ingresoaEEUU_conyugue",
+              "title": {
+                "es": "Última fecha de último ingreso a EE.UU."
+              },
+              "description": "Indique la fecha en la que ingresó a EEUU y tomó la decisión de radicarse",
+              "inputType": "date"
+            },
+            {
+              "type": "text",
+              "name": "lugar_fecha_ingresoaEEUU_conyugue",
+              "startWithNewLine": false,
+              "title": {
+                "es": "Lugar de último ingreso a EE.UU."
+              }
             }
           ]
         },
