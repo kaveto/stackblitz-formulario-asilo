@@ -22,8 +22,7 @@ const surveyJson = {
           "titleLocation": "top",
           "defaultValueExpression": "{radicadoVar}",
           "isRequired": true
-        },
-        {
+        },{
           "type": "panel",
           "name": "panel1",
           "elements": [
@@ -622,6 +621,16 @@ const surveyJson = {
             },
             {
               "type": "text",
+              "name": "lugar_nacimiento_conyugue",
+              "title": {
+                "es": "Lugar de nacimiento"
+              },
+              "description": {
+                "es": "Indique en qué país/ciudad o colonia nació su pareja "
+              }
+            },
+            {
+              "type": "text",
               "name": "Lugar_residencia_pareja",
               "title": {
                 "es": "Lugar de residencia actual"
@@ -631,6 +640,20 @@ const surveyJson = {
                 "es": "Indique en qué país/ciudad o colonia vive actualmente  su pareja actualmente"
               },
               "isRequired": true
+            },
+            {
+              "type": "text",
+              "name": "nombre_padre_conyugue",
+              "title": {
+                "es": "Nombre completo del padre"
+              }
+            },
+            {
+              "type": "text",
+              "name": "nombre_madre_conyugue",
+              "title": {
+                "es": "Nombre completo de la madre"
+              }
             },
             {
               "type": "dropdown",
@@ -1189,9 +1212,6 @@ const surveyJson = {
               "visibleIf": "{otros_paises_residencia}=true",
               "title": {
                 "es": "REGISTRO DE RESIDENCIA EN OTROS PAISES"
-              },
-              "description": {
-                "es": "n"
               },
               "isRequired": true,
               "columns": [
