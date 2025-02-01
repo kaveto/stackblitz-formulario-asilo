@@ -21,7 +21,8 @@ const surveyJson = {
           },
           "titleLocation": "top",
           "defaultValueExpression": "{radicadoVar}",
-          "isRequired": true
+          "isRequired": true,
+          "readOnly": true
         },{
           "type": "panel",
           "name": "panel1",
@@ -140,7 +141,7 @@ const surveyJson = {
                 "es": "Número de seguro social (SSN)"
               },
               "isRequired": true,
-              "requiredErrorText": "Su SSN debe ser un número de 9 digitos"
+              "requiredErrorText": "Su SSN debe ser un número de 9 dígitos"
             },
             {
               "type": "boolean",
@@ -157,7 +158,7 @@ const surveyJson = {
           "type": "boolean",
           "name": "cambio_direccion",
           "title": {
-            "es": "¿Planea cambiar de cirección en los cróximos 6 meses?"
+            "es": "¿Planea cambiar de dirección en los próximos 6 meses?"
           },
           "isRequired": true
         },
@@ -169,7 +170,7 @@ const surveyJson = {
             "es": "Indique la nueva dirección de vivienda"
           },
           "description": {
-            "default": "Incluir el Zip code en la dirección",
+            "default": "Incluir el Zip Code en la dirección",
             "es": "Incluir el Zip Code en la dirección"
           },
           "isRequired": true
@@ -208,7 +209,7 @@ const surveyJson = {
           "type": "dropdown",
           "name": "grupos_racial",
           "title": {
-            "default": "¿Pertenece a Alguno de  estos Grupos Raciales?",
+            "default": "¿Pertenece a Alguno de estos Grupos Raciales?",
             "es": "¿Pertenece a alguno de estos grupos raciales?"
           },
           "isRequired": true,
@@ -292,7 +293,7 @@ const surveyJson = {
     {
       "name": "Registro_Familiar",
       "title": "REGISTRO FAMILIAR ",
-      "description": "En esta segunda sección compilaremos toda la información relacionada con sus  padres y hermanos , así como medios hermanos que pueda tener. De igual manera de su esposa e hijos en caso de tenerlos.",
+      "description": "En esta segunda sección compilaremos toda la información relacionada con sus padres y hermanos , así como medios hermanos que pueda tener. De igual manera de su esposa e hijos en caso de tenerlos.",
       "navigationTitle": "3. Registro Familiar",
       "elements": [
         {
@@ -367,7 +368,7 @@ const surveyJson = {
                   "title": {
                     "es": "Estatus migratorio actual"
                   },
-                  "description": "En caso de que su padre viva en los Estados Unidos  o en otro país, por favor indique su estatus migratorio"
+                  "description": "En caso de que su padre viva en los Estados Unidos o en otro país, por favor indique su estatus migratorio"
                 }
               ]
             },
@@ -380,7 +381,7 @@ const surveyJson = {
                   "type": "text",
                   "name": "fecha_defuncion_padre",
                   "title": {
-                    "es": "Fecha estimada defuncion del padre"
+                    "es": "Fecha estimada defunción del padre"
                   },
                   "inputType": "date"
                 },
@@ -459,7 +460,7 @@ const surveyJson = {
                   "title": {
                     "es": "Lugar de residencia actual"
                   },
-                  "description": "Indique en qué país vive actualmente  su madre"
+                  "description": "Indique en qué país vive actualmente su madre"
                 },
                 {
                   "type": "text",
@@ -467,7 +468,7 @@ const surveyJson = {
                   "title": {
                     "es": "Estatus migratorio actual"
                   },
-                  "description": "En caso de que su madre viva en los Estados Unidos  o en otro país, por favor indique su estatus migratorio"
+                  "description": "En caso de que su madre viva en los Estados Unidos o en otro país, por favor indique su estatus migratorio"
                 }
               ]
             },
@@ -480,7 +481,7 @@ const surveyJson = {
                   "type": "text",
                   "name": "Fecha_defuncion_madre",
                   "title": {
-                    "es": "Fecha estimada defuncion de la madre"
+                    "es": "Fecha estimada defunción de la madre"
                   },
                   "inputType": "date"
                 },
@@ -536,9 +537,9 @@ const surveyJson = {
                   }
                 },
                 {
-                  "name": "Pais de residencia actual  hermano",
+                  "name": "Pais de residencia actual hermano",
                   "title": {
-                    "es": "Pais de residencia actual "
+                    "es": "País de residencia actual "
                   }
                 },
                 {
@@ -636,8 +637,8 @@ const surveyJson = {
                 "es": "Lugar de residencia actual"
               },
               "description": {
-                "default": "Indique en qué país vive actualmente  su madre",
-                "es": "Indique en qué país/ciudad o colonia vive actualmente  su pareja actualmente"
+                "default": "Indique en qué país vive actualmente su madre",
+                "es": "Indique en qué país/ciudad o colonia vive actualmente su pareja actualmente"
               },
               "isRequired": true
             },
@@ -745,7 +746,7 @@ const surveyJson = {
                   "type": "dropdown",
                   "name": "grupo_racial_conyugue",
                   "title": {
-                    "default": "¿Pertenece a Alguno de  estos Grupos Raciales?",
+                    "default": "¿Pertenece a Alguno de estos Grupos Raciales?",
                     "es": "¿Pertenece a alguno de estos grupos raciales?"
                   },
                   "isRequired": true,
@@ -1355,7 +1356,7 @@ const surveyJson = {
               "name": "tabla_registro_visitas_otros_paises_residiendo _pais_origen",
               "visibleIf": "{visitado_otros_paises_viviendo_en_pais_origen}=true",
               "title": {
-                "es": "REGISTRO DE VISITAS A OTROS PAISES MIENTRAS HA ESTADO VIVIENDO EN PAIS DE ORIGEN"
+                "es": "REGISTRO DE VISITAS A OTROS PAISES MIENTRAS HA ESTADO VIVIENDO EN PAÍS DE ORIGEN"
               },
               "description": "Detalle las salidas del país, desde el año 2014 hasta la actualidad.",
               "isRequired": true,
@@ -1426,9 +1427,9 @@ const surveyJson = {
             },
             {
               "type": "text",
-              "name": "ZipCode_historial_direccion",
+              "name": "Zipcode_historial_direccion",
               "title": {
-                "es": "Zipcode de dirección "
+                "es": "Zip Code de dirección "
               }
             },
             {
@@ -1681,7 +1682,7 @@ const surveyJson = {
       "description": {
         "es": "En esta sección se solicitará información adicional para la solicitud de asilo "
       },
-      "navigationTitle": "8. Informacion Adicional",
+      "navigationTitle": "8. Información Adicional",
       "elements": [
         {
           "type": "tagbox",
@@ -1858,6 +1859,7 @@ console.log('urlRadicado ' + url_Radicado);
 function alertResults(sender) {
   const results = JSON.stringify(sender.data);
   alert(results);
+  console.log(results)
 }
 
 const survey = new Survey.Model(surveyJson);
