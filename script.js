@@ -632,13 +632,61 @@ const surveyJson = {
             },
             {
               "type": "text",
-              "name": "Lugar_residencia_pareja",
+              "name": "Lugar de residencia actual",
               "title": {
                 "es": "Lugar de residencia actual"
               },
               "description": {
                 "default": "Indique en qué país vive actualmente su madre",
                 "es": "Indique en qué país/ciudad o colonia vive actualmente su pareja actualmente"
+              },
+              "isRequired": true
+            },
+            {
+              "type": "dropdown",
+              "name": "tipo_identificacion_pareja",
+              "title": {
+                "es": "Tipo de Identificación"
+              },
+              "isRequired": true,
+              "choices": [
+                {
+                  "value": "Pasaporte",
+                  "text": {
+                    "es": "Pasaporte"
+                  }
+                },
+                {
+                  "value": "Cedula de identidad",
+                  "text": {
+                    "es": "Cedula de identidad"
+                  }
+                },
+                {
+                  "value": "Cedula de extranjería",
+                  "text": {
+                    "es": "Cedula de extranjería"
+                  }
+                },
+                {
+                  "value": "Tarjeta de identidad",
+                  "text": {
+                    "es": "Tarjeta de identidad"
+                  }
+                },
+                {
+                  "value": "Registro civil",
+                  "text": {
+                    "es": "Registro civil"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "numero_identificacion_pareja",
+              "title": {
+                "es": "Número de identificación"
               },
               "isRequired": true
             },
@@ -976,11 +1024,52 @@ const surveyJson = {
                   "isRequired": true
                 },
                 {
-                  "type": "text",
-                  "name": "numero_pasaporte_hijo",
+                  "type": "dropdown",
+                  "name": "tipo_identificacion_hijo",
                   "title": {
-                    "es": "Número de pasaporte"
-                  }
+                    "es": "Tipo de Identificación"
+                  },
+                  "isRequired": true,
+                  "choices": [
+                    {
+                      "value": "Pasaporte",
+                      "text": {
+                        "es": "Pasaporte"
+                      }
+                    },
+                    {
+                      "value": "Cedula de identidad",
+                      "text": {
+                        "es": "Cedula de identidad"
+                      }
+                    },
+                    {
+                      "value": "Cedula de extranjería",
+                      "text": {
+                        "es": "Cedula de extranjería"
+                      }
+                    },
+                    {
+                      "value": "Tarjeta de identidad",
+                      "text": {
+                        "es": "Tarjeta de identidad"
+                      }
+                    },
+                    {
+                      "value": "Registro civil",
+                      "text": {
+                        "es": "Registro civil"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "numero_identificacion_hijo",
+                  "title": {
+                    "es": "Número de identificación"
+                  },
+                  "isRequired": true
                 },
                 {
                   "type": "text",
