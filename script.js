@@ -1423,7 +1423,8 @@ const surveyJson = {
               "name": "historial_direccion",
               "title": {
                 "es": "Dirección "
-              }
+              },
+              "isRequired": true
             },
             {
               "type": "text",
@@ -1615,7 +1616,8 @@ const surveyJson = {
               "name": "Nombre_empresa",
               "title": {
                 "es": "Nombre de empresa"
-              }
+              },
+              "isRequired": true
             },
             {
               "type": "text",
@@ -1866,5 +1868,9 @@ const survey = new Survey.Model(surveyJson);
 document.addEventListener('DOMContentLoaded', function () {
   survey.setVariable('radicadoVar', url_Radicado);
   survey.render(document.getElementById('surveyContainer'));
+  survey.onCompleting.add(function (sender, options)
+{
+    options.allowComplete = confirm('¿Estás seguro que deseas enviar el formulario?');
+});
   survey.onComplete.add(alertResults);
 });
