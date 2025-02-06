@@ -1951,7 +1951,7 @@ console.log('urlRadicado ' + url_Radicado);
 
 function alertResults(sender) {
   const results = JSON.stringify(sender.data);
-  alert(results);
+  //alert(results);
   console.log(results)
 }
 
