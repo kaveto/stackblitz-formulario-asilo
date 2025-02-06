@@ -584,7 +584,7 @@ const surveyJson = {
           "name": "Estado_civil",
           "title": {
             "default": "Estado Civil",
-            "es": "Estado civil"
+            "es": "Estado civil del titular"
           },
           "isRequired": true,
           "choices": [
@@ -600,8 +600,9 @@ const surveyJson = {
           "name": "panel_datos_pareja",
           "visibleIf": "{Estado_civil} = 'Casado/a'",
           "title": {
-            "es": "DATOS DE CONYUGUE"
+            "es": "DATOS DE CONYUGUE DEL TITULAR"
           },
+          "state": "expanded",
           "elements": [
             {
               "type": "text",
@@ -965,7 +966,7 @@ const surveyJson = {
           "type": "boolean",
           "name": "Tiene_hijos",
           "title": {
-            "es": "¿Tiene hijos?"
+            "es": "¿Titular del proceso tiene hijos?"
           },
           "isRequired": true
         },
@@ -976,6 +977,7 @@ const surveyJson = {
           "title": {
             "es": "DATOS DE HIJOS"
           },
+          "state": "expanded",
           "elements": [
             {
               "type": "paneldynamic",
