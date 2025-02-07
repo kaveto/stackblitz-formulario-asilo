@@ -1949,9 +1949,10 @@ const urlParams = new URLSearchParams(queryString);
 const url_Radicado = urlParams.get('radicado');
 console.log('urlRadicado ' + url_Radicado);
 
-function alertResults(sender) {
+function sendResults(sender) {
   const results = JSON.stringify(sender.data);
-  //alert(results);
+  let radicadoSplit = sender.data.radicado.split('-');
+  let idDeal = radicadoSplit[1];
   console.log(results)
 }
 
@@ -1963,5 +1964,5 @@ document.addEventListener('DOMContentLoaded', function () {
   {
       options.allowComplete = confirm('¿Estás seguro que deseas enviar el formulario?');
   });
-  survey.onComplete.add(alertResults);
+  survey.onComplete.add(sendResults);
 });
